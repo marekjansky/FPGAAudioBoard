@@ -44,4 +44,107 @@ X VD 9 0 1000 100 D 50 50 1 1 W
 ENDDRAW
 ENDDEF
 #
+# Connector_XLR3_Ground
+#
+DEF Connector_XLR3_Ground J 0 20 Y N 1 F N
+F0 "J" 0 350 50 H V C CNN
+F1 "Connector_XLR3_Ground" 0 250 50 H V C CNN
+F2 "" 0 0 50 H I C CNN
+F3 "" 0 0 50 H I C CNN
+$FPLIST
+ Jack*XLR*
+$ENDFPLIST
+DRAW
+C -140 0 40 0 1 0 N
+C 0 -140 40 0 1 0 N
+C 0 0 200 0 1 0 f
+C 140 0 40 0 1 0 N
+T 0 -140 70 40 0 0 1 1 Normal 1 C C
+T 0 140 70 40 0 0 1 2 Normal 1 C C
+T 0 0 -70 40 0 0 1 3 Normal 1 C C
+P 2 0 1 0 -200 0 -180 0 N
+P 2 0 1 0 -100 -200 -100 -175 N
+P 2 0 1 0 0 -200 0 -180 N
+P 2 0 1 0 200 0 180 0 N
+X ~ 1 -300 0 100 R 50 50 0 1 P
+X ~ 2 300 0 100 L 50 50 0 1 P
+X ~ 3 0 -300 100 U 50 50 0 1 P
+X ~ G -100 -300 100 U 50 50 1 1 P
+ENDDRAW
+ENDDEF
+#
+# pmod_QMOD-Device-x2-Type-Generic-Alt
+#
+DEF pmod_QMOD-Device-x2-Type-Generic-Alt P 0 40 Y N 1 F N
+F0 "P" 100 650 60 H V C CNN
+F1 "pmod_QMOD-Device-x2-Type-Generic-Alt" 90 -40 39 H V C CNN
+F2 "pmod-conn_6x2:pmod_pin_array_6x2" 100 -110 39 H I C CNN
+F3 "" 100 300 60 H V C CNN
+DRAW
+T 0 -160 680 10 0 0 0 "(Pins closest to edge)" Normal 0 C T
+T 0 345 680 10 0 0 0 "(Pins furthest from edge)" Normal 0 C T
+T 0 -160 720 30 0 0 0 "BOTTOM ROW" Normal 0 C T
+T 0 -250 175 20 0 0 0 GND Normal 0 C C
+T 0 450 175 20 0 0 0 GND Normal 0 C C
+T 0 345 720 30 0 0 0 "TOP ROW" Normal 0 C T
+T 0 -250 75 20 0 0 0 VCC Normal 0 C C
+T 0 450 75 20 0 0 0 VCC Normal 0 C C
+S 200 600 0 0 0 1 0 N
+X P7 1 -300 550 300 R 60 60 1 1 P I
+X P5 10 500 150 300 L 60 60 1 1 P I
+X P12 11 -300 50 300 R 60 60 1 1 P I
+X P6 12 500 50 300 L 60 60 1 1 P I
+X P1 2 500 550 300 L 60 60 1 1 P I
+X P8 3 -300 450 300 R 60 60 1 1 P I
+X P2 4 500 450 300 L 60 60 1 1 P I
+X P9 5 -300 350 300 R 60 60 1 1 P I
+X P3 6 500 350 300 L 60 60 1 1 P I
+X P10 7 -300 250 300 R 60 60 1 1 P I
+X 10 8 500 250 300 L 60 60 1 1 P I
+X P11 9 -300 150 300 R 60 60 1 1 P I
+ENDDRAW
+ENDDEF
+#
+# power_Earth
+#
+DEF power_Earth #PWR 0 0 Y Y 1 F P
+F0 "#PWR" 0 -250 50 H I C CNN
+F1 "power_Earth" 0 -150 50 H I C CNN
+F2 "" 0 0 50 H I C CNN
+F3 "" 0 0 50 H I C CNN
+DRAW
+P 2 0 1 0 -25 -75 25 -75 N
+P 2 0 1 0 -5 -100 5 -100 N
+P 2 0 1 0 0 -50 0 0 N
+P 2 0 1 0 50 -50 -50 -50 N
+X Earth 1 0 0 0 D 50 50 1 1 W N
+ENDDRAW
+ENDDEF
+#
+# power_GND
+#
+DEF power_GND #PWR 0 0 Y Y 1 F P
+F0 "#PWR" 0 -250 50 H I C CNN
+F1 "power_GND" 0 -150 50 H V C CNN
+F2 "" 0 0 50 H I C CNN
+F3 "" 0 0 50 H I C CNN
+DRAW
+P 6 0 1 0 0 0 0 -50 50 -50 0 -100 -50 -50 0 -50 N
+X GND 1 0 0 0 D 50 50 1 1 W N
+ENDDRAW
+ENDDEF
+#
+# power_GNDA
+#
+DEF power_GNDA #PWR 0 0 Y Y 1 F P
+F0 "#PWR" 0 -250 50 H I C CNN
+F1 "power_GNDA" 0 -150 50 H V C CNN
+F2 "" 0 0 50 H I C CNN
+F3 "" 0 0 50 H I C CNN
+DRAW
+P 6 0 1 0 0 0 0 -50 50 -50 0 -100 -50 -50 0 -50 N
+X GNDA 1 0 0 0 D 50 50 1 1 W N
+ENDDRAW
+ENDDEF
+#
 #End Library
