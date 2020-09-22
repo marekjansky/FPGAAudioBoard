@@ -434,10 +434,6 @@ F 3 "" H 3450 5450 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	3850 5750 3850 5950
-Wire Bus Line
-	3550 6050 4500 6050
-Wire Bus Line
-	4500 4450 4500 6050
 $Comp
 L power:+3.3V #PWR?
 U 1 1 5F6DAB82
@@ -449,4 +445,32 @@ F 3 "" H 3850 5450 50  0001 C CNN
 	1    3850 5450
 	1    0    0    -1  
 $EndComp
+Text Label 4550 3750 0    50   ~ 0
+MCLK
+Text Label 4550 3850 0    50   ~ 0
+LRCK
+Text Label 4550 3950 0    50   ~ 0
+SCLK
+Wire Wire Line
+	4550 3950 4900 3950
+Wire Wire Line
+	4900 3850 4550 3850
+Wire Wire Line
+	4550 3750 4900 3750
+Text Label 3550 3100 2    50   ~ 0
+MCLK
+Text Label 3550 3200 2    50   ~ 0
+LRCK
+Text Label 3550 3300 2    50   ~ 0
+SCLK
+Wire Wire Line
+	3550 3300 3100 3300
+Wire Wire Line
+	3100 3200 3550 3200
+Wire Wire Line
+	3550 3100 3100 3100
+Wire Bus Line
+	3550 6050 4500 6050
+Wire Bus Line
+	4500 4450 4500 6050
 $EndSCHEMATC
